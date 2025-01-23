@@ -248,7 +248,7 @@ body, html{
   
   .footer-bottom a:hover {
     text-decoration: underline;
-  
+  }
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -295,9 +295,9 @@ body, html{
 
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
+        flex-direction: inherit;
+        align-items: center;
+        padding: 5px 5px;
     }
 
     .header .logo-container {

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'myfont' ;
+    src: url(fontss/Equila.ttf);
+  }
+
+  @font-face {
+    font-family:'myfont2' ;
+    src: url(fontss/Destine.otf);
+  }
+
+
+body, html{
+    font-family: 'roboto', sans-serif;
+    overflow-x: hidden;
+
+}
+
+/* Header */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.5);
+    
+    transition: background-color 0.3s ease;
+
+}
+.header .headerleft{
+    display: flex;
+    align-items: center;
+
+}
+
+.header .logo{
+    max-width: 150px;
+    height: auto;
+
+    
+}
+.header .name{
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    font-family:'myfont';
+    
+}
+.header .links{
+    display: flex;
+    gap: 20px;
+   
+
+}
+.header .links a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.header .links a:hover{
+    color: #0073e6;
+}

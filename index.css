@@ -94,7 +94,7 @@ body, html{
     font-weight: 300;
     font-family: myfont2;
      word-spacing: 5px;
-     color: #fa7171;
+     color: #f9f6f6;
 }
 
 .about-section {
@@ -512,9 +512,9 @@ h1 {
 
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
-        padding: 10px 20px;
+        padding: 5px 5px;
     }
 
     .header .logo-container {
@@ -612,8 +612,8 @@ h1 {
 }
 @media (max-width: 480px) {
     #services {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 70px;
     }
 
     .services-grid {
