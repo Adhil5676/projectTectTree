@@ -65,7 +65,7 @@ html {
 .middletxt {
   height: 100vh;
   display: flex;
-  background: url(images/headersolarpannel2.jpg) no-repeat center center/cover;
+  background: url(images/solar-energy-2157212.jpg) no-repeat center center/cover;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -464,7 +464,7 @@ h1 {
 .social-icons a {
   margin-right: 10px;
   color: #fff;
-  background-color: #caec51;
+  background-color: #0039e6;
   width: 35px;
   height: 35px;
   display: inline-flex;
@@ -477,7 +477,7 @@ h1 {
 
 .social-icons a:hover {
   background-color: #fff;
-  color: #caec51;
+  color: #0046d1;
 }
 
 /* Responsive Design footer */
@@ -497,7 +497,7 @@ h1 {
 @media (max-width: 768px) {
   .header {
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     padding: 5px 5px;
   }
 
@@ -511,7 +511,7 @@ h1 {
 
   .header .links {
     flex-direction: column;
-    margin-left: 10PX;
+    margin-left: 10px;
     gap: 10px;
   }
   .middletxt {
@@ -535,8 +535,9 @@ h1 {
   }
 
   .image-grid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
+    max-width: 250px;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
   }
 
   .about-text {
@@ -554,11 +555,11 @@ h1 {
   }
 
   .about-title {
-    font-size: 16px;
+    font-size: 25px;
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   p {
@@ -595,12 +596,12 @@ h1 {
 @media (max-width: 480px) {
   #services {
     margin-left: 5px;
-    margin-right: 70px;
+    margin-right: 90px;
   }
 
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 15px;
   }
 
   .service-card {

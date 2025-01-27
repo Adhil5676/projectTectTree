@@ -33,3 +33,9 @@ h1{
     border: 2px solid #ff0000;
 
 }
+@media screen and (max-width: 900px){
+    .btn{
+        margin-left: 150px;
+    }
+    
+}
