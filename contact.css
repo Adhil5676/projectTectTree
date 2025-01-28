@@ -48,6 +48,12 @@ html {
   color: rgb(255, 255, 255);
   font-family: "myfont";
 }
+.hamburger {
+    display: flex;
+    
+
+  }
+
 .header .links {
   display: flex;
   gap: 20px;
@@ -61,6 +67,24 @@ html {
 }
 .header .links a:hover {
   color: #0073e6;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.header .links {
+  display: flex;
 }
 .header .links a i {
   margin-right: 5px;
@@ -300,10 +324,34 @@ html {
   .header .name {
     font-size: 1.2em;
   }
+  .hamburger {
+    display: flex;
+    
 
+  }
   .header .links {
+    display: none;
     flex-direction: column;
+    margin-left: 10px;
     gap: 10px;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+
+  }
+  .header .links a {
+    padding: 10px 20px;
+    
+  }
+
+  .header .links.show {
+    display: flex;
+    background-color: #333;
+    margin-top: 10px;
+    margin-left: 250px;
+    opacity: 0.8;
+    transition: all 0.3s ease;  
   }
   .middletxt {
     padding: 0 10px;
@@ -338,6 +386,9 @@ html {
 
   .contact-form {
     max-width: 100%;
+    
+   align-items: auto;
+  
   }
 
   .contact-form input,
