@@ -9,6 +9,67 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <style>
+      #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+
+      .spinner {
+        width: 56px;
+        height: 56px;
+        display: grid;
+        border: 4.5px solid #0000;
+        border-radius: 50%;
+        border-color: #dbdcef #0000;
+        animation: spinner-e04l1k 1s infinite linear;
+      }
+
+      .spinner::before,
+      .spinner::after {
+        content: "";
+        grid-area: 1/1;
+        margin: 2.2px;
+        border: inherit;
+        border-radius: 50%;
+      }
+
+      .spinner::before {
+        border-color: #474bff #0000;
+        animation: inherit;
+        animation-duration: 0.5s;
+        animation-direction: reverse;
+      }
+
+      .spinner::after {
+        margin: 8.9px;
+      }
+
+      @keyframes spinner-e04l1k {
+        100% {
+          transform: rotate(1turn);
+        }
+      }
+    </style>
+
+    <script>
+      window.addEventListener("load", function () {
+        document.getElementById("loader").style.display = "none";
+      });
+    </script>
   </head>
 
   <body>
@@ -159,6 +220,11 @@
               Expert solutions for all types of control wiring, ensuring
               efficiency and reliability.
             </p>
+
+            <p>
+              Expert solutions for all types of control wiring, ensuring
+              efficiency and reliability.
+            </p>
           </div>
         </div>
       </div>
@@ -213,16 +279,21 @@
           <a href="https://www.linkedin.com/in/adhil-cs-255116308">ADHIL CS</a>
         </p>
         <div class="social-icons">
-          <a href="https://m.facebook.com/anudarsh.cr/"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/anudarshrajeev?igsh=MXl1Zmxoc2JlbjVj"><i class="fab fa-twitter"></i></a>
+          <a href="https://m.facebook.com/anudarsh.cr/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/anudarshrajeev?igsh=MXl1Zmxoc2JlbjVj"
+            ><i class="fab fa-twitter"></i
+          ></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </footer>
     <script>
       function toggleMenu() {
-        const links = document.querySelector('.header .links');
-        links.classList.toggle('show');
+        const links = document.querySelector(".header .links");
+        links.classList.toggle("show");
       }
     </script>
   </body>
